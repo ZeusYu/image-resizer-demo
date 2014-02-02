@@ -1,0 +1,17 @@
+{
+  "name":"图片处理工具",
+  "version":"0.0.1",
+  "main":"index.html",
+  "node-remote":"*",
+  "window":{
+    "title":"图片处理工具",
+    "frame":true,
+    "toolbar":false,
+    "width":1024,
+    "height":700
+  },
+  "webkit":{
+    "plugin":true
+  },
+  "chromium-args": "--enable-threaded-compositing"
+}
