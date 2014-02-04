@@ -6,9 +6,10 @@
   "window":{
     "title":"图片处理工具",
     "frame":true,
-    "toolbar":false,
+    "toolbar":true,
     "width":1024,
-    "height":700
+    "height":700,
+    "resizable": false
   },
   "webkit":{
     "plugin":true
