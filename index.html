@@ -21,22 +21,9 @@
             1.添加图片
           </div>
           <div class="panel-body">
-            <a class="btn btn-primary" onclick="$(&#39;input[id=add-img]&#39;).click()">选择图片</a><input accept=".jpg,.gif,.bmp,.png" id="add-img" multiple="multiple" onchange="loadImage()" style="display:none" type="file">
+            <a class="btn btn-primary" onclick="$('input[id=add-img]').click()">选择图片</a><input accept=".jpg,.gif,.bmp,.png" id="add-img" multiple="multiple" onchange="loadImage()" style="display:none" type="file">
             <div class="gallery">
-              <div class="img-item">
-                <img class="img-rounded" id="imgMax" src="http://placehold.it/160x128">
-                <div class="toolbar">
-                  <div class="tool roate-left">
-                    左转
-                  </div>
-                  <div class="tool roate-right">
-                    右转
-                  </div>
-                  <div class="tool delete">
-                    删除
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -51,7 +38,7 @@
             <p>
               中等图片（800像素宽，大概约141K，适合发布房源使用）
             </p>
-            <button class="btn btn-primary">导出图片</button>
+            <button class="btn btn-primary" onclick="$('input[id=save-img]').click()">导出图片</button><input id="save-img" onchange="saveImage()" style="display:none" type="file" nwdirectory>
           </div>
         </div>
         <p>

@@ -6,7 +6,7 @@
   "window":{
     "title":"图片处理工具",
     "frame":true,
-    "toolbar":true,
+    "toolbar":false,
     "width":1024,
     "height":700,
     "resizable": false
