@@ -15,7 +15,7 @@ html lang='zh_cn'
           .panel-heading 1.添加图片
           .panel-body
             a class="btn btn-primary" onclick="$('input[id=add-img]').click()" 选择图片
-            input type="file" multiple="multiple" style="display:none" onchange="readAsDataURL()" id="add-img" accept=".jpg,.gif,.bmp,.png"
+            input type="file" multiple="multiple" style="display:none" onchange="loadImage()" id="add-img" accept=".jpg,.gif,.bmp,.png"
             .gallery
                 .img-item
                   img class="img-rounded" id="imgMax" src="http://placehold.it/160x128"
@@ -29,6 +29,7 @@ html lang='zh_cn'
           .panel-body
             strong 图片瘦身为：
             p 中等图片（800像素宽，大概约141K，适合发布房源使用）
-            button class="btn btn-primary" 导出图片
+            button class="btn btn-primary" onclick="$('input[id=save-img]').click()" 导出图片
+            input type="file" style="display:none" id="save-img" onchange="saveImage()"
         p 其他介绍文字
         .logo
